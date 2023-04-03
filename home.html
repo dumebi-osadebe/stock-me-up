@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body%}
+    <form action="/stock_data" method="post"> <!-- server will retrieve the variables entered and do something based on this post request-->
+        <h3 align="center"> Sign Up </h3>
+        
+        <div class="form-group">
+            <label for="symbol">Please select the Sectors you are interested in</label>
+
+            <input type="checkbox" id="Communication services" name="vehicle1" value="Bike">
+            <label for="Communication services">Communication services</label><br>
+
+            <input type="checkbox" id="Customer discretionary" name="Customer discretionary" value="Customer discretionary">
+            <label for="Customer discretionary"> Customer discretionary </label><br>
+
+            <input type="checkbox" id="Consumer staples" name="Consumer staples" value="Consumer staples">
+            <label for="Consumer staples"> Consumer staples </label>
+
+            <input type="checkbox" id="Energy" name="Energy" value="Energy">
+            <label for="Energy"> Energy </label>
+
+            <input type="checkbox" id="Financials" name="Financials" value="Financials">
+            <label for="Financials"> Financials </label>
+
+            <input type="checkbox" id="Healthcare" name="Healthcare" value="Healthcare">
+            <label for="Healthcare"> Healthcare </label>
+
+            <input type="checkbox" id="Indutrials" name="Indutrials" value="Indutrials">
+            <label for="Indutrials"> Indutrials</label>
+
+            <input type="checkbox" id="Information technology" name="Information technology" value="Information technology">
+            <label for="Information technology"> Information Technology (IT)</label>
+
+            <input type="checkbox" id="Materials" name="Materials" value="Materials">
+            <label for="Materials"> Materials </label>
+
+            <input type="checkbox" id="Real estate" name="Real estate" value="Real estate">
+            <label for="Real estate"> Real estate </label>
+
+            <input type="checkbox" id="Utilities" name="Utilities" value="Utilities">
+            <label for="Utilities"> Utilities </label>
+
+        </div>
+
+        <div class="form-group">
+            <label for="start_date">Start Date</label>
+            <input 
+                type="date" 
+                class="form-control" 
+                id="start_date" 
+                name="start_date" 
+                placeholder="Enter Start date"
+                required
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="end_date">End Date</label>
+            <input 
+                type="date" 
+                class="form-control" 
+                id="end_date" 
+                name="end_date" 
+                placeholder="Enter End date"
+                required
+            />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+{% endblock %}
