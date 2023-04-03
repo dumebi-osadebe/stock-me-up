@@ -1,0 +1,10 @@
+Flask
+Flask-RESTful
+pandas
+yfinance
+numpy
+yahoo_fin
+scikit-learn
+tensorflow
+keras
+
